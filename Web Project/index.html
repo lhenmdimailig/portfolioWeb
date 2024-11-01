@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>lhenWebPortfolio</title>
+</head>
+<body>
+
+    <div class="nav" id="nav">
+        <div class="logo">Your Logo</div>
+        <a href="#" class="icon" onclick="toggleMenu()">&#9776;</a>
+        <div class="menu-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    
+<!-- 
+<div class="navbar" id="navbar">
+    <h1 class="logo">lhen;</h1>
+    <a href="#about me" class="active">About</a>
+        <a href="#about">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div> -->
+
+<section id="hero" class="hero">
+    <svg viewBox="0 0 100 20">
+        <defs>
+            <linearGradient id="gradient">
+                <stop offset="0%" stop-color="#fefefe"/>
+            </linearGradient>
+            <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
+                    <animateTransform
+                            attributeName="transform"
+                            begin="0s"
+                            dur="1.5s"
+                            type="translate"
+                            from="0,0"
+                            to="40,0"
+                            repeatCount="indefinite" />
+                </path>
+            </pattern>
+        </defs>
+        <text text-anchor="middle" x="50" y="15" font-size="20" fill="#fefefe" fill-opacity="0.7">lhen;</text>
+        <text text-anchor="middle" x="50" y="15" font-size="20" fill="url(#wave)"  fill-opacity="1">lhen;</text>
+    </svg>
+
+</section>
+
+<section id="about me">
+    <div class="container">
+        <div class="about-section-info">
+            <h2 class="titles">About Me</h2>
+            <p>Driven by creativity and ambition, I constantly seek new challenges in the digital realm. From crafting captivating experiences to pushing boundaries, I'm committed to excellence in every project. With an eye for detail and a love for innovation, I strive to exceed expectations. Beyond pixels and code, I'm a dedicated learner and problem-solver, bringing visions to life.</p>
+            <p class="typewriter"></p>
+        </div>
+    </div>
+</section><hr>
+
+<section id="about">
+    <div class="container">
+        <div class="about-content">
+           
+            <div class="about-section">
+                <img src="IMG_20220917_121723.jpg" alt="Your Image" class="landing-image">
+            </div>
+            
+          
+            <div class="about-section-info">
+                <h2 class="titles">PERSONAL INFORMATION</h2>
+                <p>Lhen M. Dimailig</p>
+                <p>19 years old</p>
+                <p>Web Designer</p>
+                <p>Mindoro State University</p>
+                <em>Bachelor of Science in Information Technology</em>
+                <p>Oriental Mindoro, Philippines</p>
+                <div class="cv-download-container">
+                    <a href="cv.pdf" class="btn" download>Download CV</a>
+                </div>
+            </div>
+            <div class="about-section-info">
+                <h2 class="titles">SKILLS</h2>
+
+                    <p>HTML</p>
+                    <div class="skills-container">
+                      <div class="skills html">80%</div>
+                    </div>
+                    
+                    <p>CSS</p>
+                    <div class="skills-container">
+                      <div class="skills css">80%</div>
+                    </div>
+                    
+                    <p>C#</p>
+                    <div class="skills-container">
+                      <div class="skills c">50%</div>
+                    </div>
+                    
+                    <p>JAVASCRIPT</p>
+                    <div class="skills-container">
+                      <div class="skills js">30%</div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="portfolio">
+    <div class="container">
+        <h2 class="titles">PROJECTS</h2>
+        <div class="gallery">
+            <div class="item">
+                <a target="_blank" href="building.png">
+                    <img src="building.png" alt="ebook" width="150" height="140">
+                </a>
+                <h3>Rent System</h3>
+                <div class="desc"> A boarding house management system that oversee rent payments, monitor tenant information, and maintain meticulous financial records.</div>
+            </div>
+            <div class="item">
+                <a target="_blank" href="tic-tac-toe.png">
+                    <img src="tic-tac-toe.png" alt="ebook" width="200" height="200">
+                </a>
+                <h3>Function Game</h3>
+                <div class="desc">A desktop game application about algorithms. Players can improve their mental math abilities and track their progress over time.  </div>
+            </div>
+            <div class="item">
+                <a target="_blank" href="calendar.png">
+                    <img src="calendar.png" alt="ebook" width="150" height="140">
+                </a>
+                <h3>Dalo</h3>
+                <div class="desc">A desktop application system designed for efficiently managing attendance and fines at events, specifically tailored for IT students. </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          <q>Doesn't stop until she finishes her work. I salute her for that.</q>
+          <p class="author">- John Darwin Lambon</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>A kind of woman who does her very best at all things. She make sures she produces quality work.</q>
+          <p class="author">- Aj Basilan</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Her work doesn't fail.</q>
+          <p class="author">- Sharon Caballero</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <h2 class="titles">CONTACT ME</h2>
+        <p>Let's collaborate! Drop me a message.</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p>OR</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/dimailiglhen" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/_lhheeennn.n/?hl=en" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/lhen_nie" class="icon"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+</section>
+
+<script>
+
+
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+</body>
+</html>
